@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Add task
+{% endblock %}
+
+{% block main %}
+<form action="/addTask" method="POST">
+    <div class="mb-3">
+        <input class="form-control mx-auto w-auto" id="description" name="description" placeholder="Description" type="text">
+    </div>
+    <div class="mb-3">
+        <input class="form-control mx-auto w-auto" id="date" name="date" placeholder="Deadline" type="date">
+    </div>
+    <button class="btn btn-primary" type="submit">Submit</button>
+</form>
+{% endblock %}
